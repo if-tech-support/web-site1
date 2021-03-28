@@ -52,7 +52,7 @@ header nav ul li {
 
 .first-image {
   height: 500px;
-  background-image: url(./image/profile-site-first-view-img.webp );
+  background-image: url(/image/first-view-image.jpg );
   background-size: cover;
 }
 

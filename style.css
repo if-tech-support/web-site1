@@ -155,6 +155,22 @@ header nav ul li {
   background-color: rgb(94, 194, 132);
 }
 
+.skill-contents {
+  display: flex;
+  justify-content: space-evenly;
+
+  text-align: left;
+}
+
+.skill-title {
+  text-align: center;
+}
+
+.skill-contents  td {
+  padding-right: 30px;
+}
+
+
 /* .skill-section ここまで */
 /* =============================== */
 

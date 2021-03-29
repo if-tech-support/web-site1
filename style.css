@@ -74,35 +74,68 @@ header nav ul li {
 
 /* .profile-section ここから */
 .profile-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  padding: 20px 10px;
   background-color: rgb(94, 94, 194);
 }
 
-/* ここまで */
+.profile-contents {
+  display: flex;
+  justify-content: space-evenly;
+
+  height: 70%;
+}
+
+.profile-image {
+  width: 45%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.profile-items ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.profile-items ul li {
+  margin-bottom: 10px;
+
+  font-size: 20px;
+  list-style: none;
+}
+
+.profile-items ul li > span {
+  font-size: 24px;
+  font-weight: bold;
+}
+/* profile-section ここまで */
 
 /* .portfolio-section ここから */
 .portfolio-section {
   background-color: rgb(94, 174, 194);
 }
 
-/* ここまで */
+/* portfolio-section ここまで */
 
 /* .skill-section ここから */
 .skill-section {
   background-color: rgb(94, 194, 132);
 }
 
-/* ここまで */
+/* .skill-section ここまで */
 
 /* .career-section ここから */
 .career-section {
   background-color: rgb(176, 194, 94);
 }
-
-/* ここまで */
+/* career-sectionここまで */
 
 /* .contact-form-sectionここから */
 .contact-form-section {
   background-color: rgb(194, 139, 94);
 }
-
-/* ここまで */
+/* contact-form-content ここまで */

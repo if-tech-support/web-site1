@@ -67,7 +67,7 @@ header nav ul li {
 
 .first-image {
   height: 500px;
-  background-image: url(https://github.com/if-tech-support/web-site1/tree/master/image/first-view-image.jpg );
+  background-image: url(https://github.com/if-tech-support/web-site1/blob/master/image/first-view-image.jpg);
   background-size: cover;
 }
 

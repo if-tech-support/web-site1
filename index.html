@@ -155,6 +155,41 @@
     <!-- ここから contact form section -->
     <section class="section-container contact-form-section">
       <div class="section-title"><h2>お問い合わせ</h2></div>
+      <div class="contact-form">
+        <form>
+          <div class="form-left">
+            <dl>
+              <dt class="form-name">氏名：</dt>
+              <dd><input type="text"></dd>
+            </dl>
+            <dl>
+              <dt class="form-tel">TEL：</dt>
+              <dd><input type="tel"></dd>
+            </dl>
+            <dl>
+              <dt class="form-email">Email：</dt>
+              <dd><input type="email"></dd>
+            </dl>
+            <dl>
+              <dt class="form-subject">種別：</dt>
+              <dd>
+                <select name="contact-lists">
+                  <option disabled selected value="" >項目から選択して下さい</option>
+                  <option value="price">見積もり</option>
+                  <option value="consultation">相談</option>
+                  <option value="others">その他</option>
+                </select>
+            </dd>
+            </dl>
+          </div>
+          <div class="form-right">
+            <dl>
+              <dt class="form-detail">内容：</dt>
+              <textarea  cols="30" rows="10"></textarea>
+            </dl>
+          </div>
+        </form>
+      </div>
     </section>
     <!-- ここまで contact form section -->
 

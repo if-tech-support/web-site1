@@ -208,4 +208,36 @@ header nav ul li {
 .contact-form-section {
   background-color: rgb(194, 139, 94);
 }
+
+form {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact-form dl {
+  display: flex;
+  justify-content: start;
+}
+
+.form-name {
+  padding-right: 10px;
+}
+
+.form-tel {
+  padding-right: 12px;
+}
+
+.form-subject {
+  padding-right: 10px;
+}
+
+.contact-form select {
+  width: 180px;
+}
+
+.form-detail {
+  padding-right: 20px;
+}
+
+
 /* contact-form-content ここまで */

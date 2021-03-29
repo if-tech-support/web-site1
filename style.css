@@ -73,7 +73,7 @@ header nav ul li {
   flex-direction: column;
   justify-content: space-evenly;
 
-  width: 80%;
+  width: 90%;
   height: 400px;
 
   margin: 100px auto;
@@ -166,8 +166,13 @@ header nav ul li {
   text-align: center;
 }
 
+.skill-contents  th {
+  padding-bottom: 20px;
+}
+
 .skill-contents  td {
   padding-right: 30px;
+  padding-bottom: 20px;
 }
 
 
@@ -178,6 +183,24 @@ header nav ul li {
 .career-section {
   background-color: rgb(176, 194, 94);
 }
+
+.career-contents {
+  text-align: left;
+}
+
+.career-contents table {
+  padding-left: 20px;
+}
+
+.career-contents  th {
+  padding-bottom: 20px;
+}
+
+.career-contents  td {
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
 /* career-sectionここまで */
 /* =============================== */
 

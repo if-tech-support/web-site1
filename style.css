@@ -225,11 +225,10 @@ header nav ul li {
 /* =============================== */
 
 /* .career-section ここから */
-.career-section {
-  background-color: rgb(176, 194, 94);
-}
-
 .career-contents {
+  display: flex;
+  justify-content: space-evenly;
+
   text-align: left;
 }
 
@@ -241,6 +240,12 @@ header nav ul li {
   padding-bottom: 20px;
 }
 
+.career-contents th span {
+  padding-bottom: 10px;
+
+  border-bottom: 1px dotted #e69a28;
+}
+
 .career-contents  td {
   padding-right: 30px;
   padding-bottom: 30px;
@@ -250,10 +255,6 @@ header nav ul li {
 /* =============================== */
 
 /* .contact-form-sectionここから */
-.contact-form-section {
-  background-color: rgb(194, 139, 94);
-}
-
 form {
   display: flex;
   justify-content: space-evenly;
@@ -276,12 +277,20 @@ form {
   padding-right: 10px;
 }
 
-.contact-form select {
-  width: 180px;
-}
-
 .form-detail {
   padding-right: 20px;
+}
+
+form input,
+form select {
+  color: rgb(0, 0, 0);
+  width: 180px;
+  padding: 3px;
+}
+
+form textarea {
+  color: black;
+  padding: 3px;
 }
 
 .form-button {
@@ -292,5 +301,4 @@ form {
 .form-button button {
   margin-left: 20px;
 }
-
 /* contact-form-content ここまで */

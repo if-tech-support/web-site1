@@ -1,10 +1,10 @@
 * {
-  color: #eb9514;
+
 }
 
 img {
   border-radius: 8%;
-  box-shadow: 5px 5px 0 #bbb;
+  box-shadow: 5px 6px 0 rgb(117, 85, 37);
 }
 
 a {
@@ -12,11 +12,6 @@ a {
 
   text-decoration: none;
   color: #eb9514;
-}
-
-a:hover {
-  border-bottom: 1px solid #e69a28;
-  background-color: #e4cfaf;
 }
 
 li {
@@ -30,6 +25,7 @@ body {
   width: 1100px;
   margin: 0 auto;
 
+  color: #eb9514;
   background-color: #f1efec;
 }
 /* body ここまで */
@@ -66,6 +62,7 @@ header nav ul li {
   padding-bottom: 80px;
 
   text-align: center;
+  color: #fffbfb;
 }
 /* main-container ここまで */
 /* =============================== */
@@ -80,6 +77,8 @@ header nav ul li {
 
 .first-image {
   height: 500px;
+
+  color: #eb9514;
   background-image: url(image/first-view-image.jpg );
   background-size: cover;
 }
@@ -91,8 +90,7 @@ header nav ul li {
 }
 /* first view ここまで */
 /* =============================== */
-
-/* section-container ここから */
+/* section 全体ここから */
 .section-container {
   display: flex;
   flex-direction: column;
@@ -104,10 +102,15 @@ header nav ul li {
   margin: 100px auto;
   padding: 20px 10px;
 
-  background-color: #eee0c9;
+  background-color: rgb(241, 165, 66);
   border-radius: 8%  20%;
 }
-/* section-container ここまで */
+
+.section-title {
+  color: #f1efec;
+  font-size: 24px;
+}
+/* section 全体 ここまで */
 /* =============================== */
 
 /* .profile-section ここから */
@@ -182,27 +185,31 @@ header nav ul li {
 .skill-contents {
   display: flex;
   justify-content: space-evenly;
+
   text-align: left;
 }
 
 .skill-title {
   text-align: center;
+
+  font-size: 22px;
 }
 
 .skill-contents > div table {
   padding: 20px;
-  border-radius: 5%;
-  border: 1px solid #e69a28;
+  border-radius: 20px;
 }
 
 .skill-contents  th {
   padding-bottom: 20px;
+
+  font-size: 20px;
 }
 
 .skill-section th span {
   padding-bottom: 10px;
 
-  border-bottom: 1px dotted #e69a28;
+  border-bottom: 1px dotted #f1efec;
 }
 
 .skill-contents  td {
@@ -220,10 +227,12 @@ header nav ul li {
 
 /* .career-section ここから */
 .career-contents {
-  display: flex;
-  justify-content: space-evenly;
+  width: 93%;
+  margin: 0 auto;
+  padding: 20px 10px 0px;
 
   text-align: left;
+  border-radius: 20px;
 }
 
 .career-contents table {
@@ -232,12 +241,14 @@ header nav ul li {
 
 .career-contents  th {
   padding-bottom: 20px;
+
+  font-size: 20px;
 }
 
 .career-contents th span {
   padding-bottom: 10px;
 
-  border-bottom: 1px dotted #e69a28;
+  border-bottom: 1px dotted #f1efec;
 }
 
 .career-contents  td {
@@ -277,14 +288,25 @@ form {
 
 form input,
 form select {
-  color: rgb(0, 0, 0);
   width: 180px;
-  padding: 3px;
+  padding: 8px 10px;
+
+  font-size: 15px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  color: rgb(0, 0, 0);
 }
 
 form textarea {
+  width: 300px;
+  padding: 10px 14px;
+
+  font-size: 15px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
   color: black;
-  padding: 3px;
 }
 
 .form-button {
@@ -294,13 +316,19 @@ form textarea {
 
 .form-button button {
   margin-left: 20px;
+  padding: 5px 10px;
+
+  color: #eb9514;
+  background-color: #fff;
+  border: 1px solid #eb9514;
+  border-radius: 20px;
+  outline: none;
 }
 /* contact-form-content ここまで */
 
 /* footer ここから */
 footer {
   height: 180px;
-
 }
 
 .footer-top nav {

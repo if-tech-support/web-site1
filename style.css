@@ -4,6 +4,7 @@
 
 img {
     border-radius: 8%;
+    box-shadow: 5px 5px 0 #bbb;
 }
 
 a {
@@ -181,13 +182,12 @@ header nav ul li {
 
 /* .skill-section ここから */
 .skill-section {
-  background-color: rgb(94, 194, 132);
+
 }
 
 .skill-contents {
   display: flex;
   justify-content: space-evenly;
-
   text-align: left;
 }
 
@@ -195,13 +195,29 @@ header nav ul li {
   text-align: center;
 }
 
+.skill-contents > div table {
+  padding: 20px;
+  border-radius: 5%;
+  border: 1px solid #e69a28;
+}
+
 .skill-contents  th {
   padding-bottom: 20px;
+}
+
+.skill-section th span {
+  padding-bottom: 10px;
+
+  border-bottom: 1px dotted #e69a28;
 }
 
 .skill-contents  td {
   padding-right: 30px;
   padding-bottom: 20px;
+}
+
+.skill-contents td span {
+  font-weight: bold;
 }
 
 

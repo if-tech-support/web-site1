@@ -16,11 +16,9 @@
     <div class="header-title"><h1>My Profile</h1></div>
     <nav>
       <ul>
-        <li><a href="#profile">自己紹介</a> </li>
-        <li><a href="#portfolio">制作実績</a> </li>
-        <li><a href="#skill">技術・スキル</a> </li>
-        <li><a href="#career">経歴</a> </li>
-        <li><a href="#contact-form">お問い合わせ</a> </li>
+        <li><a href="#portfolio">Works</a> </li>
+        <li><a href="#career">Career</a> </li>
+        <li><a href="#contact-form">Contact</a> </li>
       </ul>
     </nav>
   </header>
@@ -29,195 +27,82 @@
   <!--
     Section 毎に 学べるテーマが変わるように構成
       ・First-view : 画像の上にテキストを 重ねるレイアウト
-      ・Profile : イメージとコンテンツを左右に配置したレイアウト
       ・Portfolio : タイトルとイメージを上下に配置したレイアウト
-      ・Skill : 2行のテーブルを２つflexで並べるレイアウト
       ・Career : ３行のテーブルを利用したレイアウト
       ・Contact-form : Form, dl / dt / dd , input, select, textarea を使ったレイアウト
   -->
-  <main class="main-container">
-
-    <!-- ここからfirst view -->
-    <div class="first-view">
-      <div class="first-image">
-      </div>
-      <div class="first-title">
-        <h1>My Profile Site</h1>
-      </div>
+  <!-- ここからfirst view -->
+  <div class="first-view">
+    <div class="first-image">
     </div>
-    <!-- ここまでfirst view -->
+  </div>
+  <!-- ここまでfirst view -->
 
-    <!-- ここからprofile section -->
-    <section id="profile" class="section-container profile-section">
-      <div class="section-title"><h1>自己紹介</h1></div>
-      <div class="profile-contents">
-        <div class="profile-image"><img src="image/profile-image.png" alt="プロフィール画像"></div>
-        <div class="profile-items">
-          <ul>
-            <li>名前：<span>鈴木　太郎</span> </li>
-            <li>年齢：<span>28歳</span></li>
-            <li>出身地：<span>東京都</span></li>
-          </ul>
-        </div>
-
-      </div>
-    </section>
-    <!-- ここまでprofile section -->
+  <main class="main-container">
 
     <!-- ここから portfolio section -->
     <section id="portfolio" class="section-container portfolio-section">
-      <div class="section-title"><h2>制作実績</h2></div>
+      <div class="section-title"><h2>Works</h2></div>
       <div class="portfolio-contents">
         <div class="portfolio-content portfolio1">
-          <h3>ポートフォリオサイト</h3>
-          <img src="image/portfolio-image1.png" alt="イラスト１">
+          <img src="image/portfolio-image1.jpg" alt="イラスト１">
         </div>
         <div class="portfolio-content portfolio2">
-          <h3>カフェサイト</h3>
           <img src="image/portfolio-image2.jpg" alt="カフェサイト">
         </div>
         <div class="portfolio-content portfolio3">
-          <h3>ポートレート</h3>
           <img src="image/portfolio-image3.jpg" alt="ポートレート">
         </div>
-      </div>
-      <div class="portfolio-more-button">
-        <p>もっと見る</p>
+        <div class="portfolio-content portfolio1">
+          <img src="image/portfolio-image3.jpg" alt="イラスト１">
+        </div>
+        <div class="portfolio-content portfolio2">
+          <img src="image/portfolio-image2.jpg" alt="カフェサイト">
+        </div>
+        <div class="portfolio-content portfolio3">
+          <img src="image/portfolio-image1.jpg" alt="ポートレート">
+        </div>
+        <div class="portfolio-view-more">
+          <p>VIEW MORE</p>
+        </div>
       </div>
     </section>
     <!-- ここまで portfolio section -->
 
-    <!-- ここから skill section -->
-    <section id="skill" class="section-container skill-section">
-      <div class="section-title"><h2>技術スキル</h2></div>
-        <div class="skill-contents">
-          <div class="skill-programing">
-            <div class="skill-title"><h3>プログラミングスキル</h3></div>
-            <table>
-              <thead>
-                <tr>
-                  <th><span>言語</span> </th>
-                  <th><span>経験年数</span> </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><span>HTML</span> </td>
-                  <td>~ ３年</td>
-                </tr>
-                <tr>
-                  <td><span>CSS</span> </td>
-                  <td>~ ３年</td>
-                </tr>
-                <tr>
-                  <td><span>JavaScript</span> </td>
-                  <td>~ 2年</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="skill-other">
-            <div class="skill-title"><h3>その他スキル</h3></div>
-            <table>
-              <thead>
-                <tr>
-                  <th><span>スキル名</span> </th>
-                  <th><span>経験年数</span> </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><span>webコンサルティング</span> </td>
-                  <td>~ 2年</td>
-                </tr>
-                <tr>
-                  <td><span>webマーケティング</span> </td>
-                  <td>~ 2年</td>
-                </tr>
-                <tr>
-                  <td><span>webサイト運用</span> </td>
-                  <td>~ 2年</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-    </section>
-    <!-- ここまで skill section -->
-
     <!-- ここから career section -->
     <section id="career" class="section-container career-section">
-      <div class="section-title"><h2>経歴</h2></div>
+      <div class="section-title"><h2>Career</h2></div>
       <div class="career-contents">
-        <table>
-          <thead>
-            <tr>
-              <th><span>期間</span></th>
-              <th><span>所属</span></th>
-              <th><span>経験内容</span></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>平成〇〇年 ~ 平成〇〇年</td>
-              <td>△△株式会社</td>
-              <td>webコーダーとして、HTML,CSSを利用したwebサイト作成</td>
-            </tr>
-            <tr>
-              <td>平成〇〇年 ~ 令和〇〇年</td>
-              <td>□□株式会社</td>
-              <td>webコーダー兼プロジェクトリーダーとして、webサイト作成や運用担当</td>
-            </tr>
-            <tr>
-              <td>令和〇〇年 ~ 現在</td>
-              <td>フリーランス</td>
-              <td>webサイト作成の受託開発やコンサルティングを主軸に活動中</td>
-            </tr>
-          </tbody>
-        </table>
+        <p>
+          2000年から webデザイナーとしてキャリアをスタート。
+        </p>
+        <p>
+          2003年に 東京都内の制作会社にて webデザイン部 マネージャーとしてデザイン業務に携わる。
+        </p>
+        <p>
+          2010年からフリーランスへ転向し、web制作やコンサルティングを行っています。
+        </p>
       </div>
     </section>
     <!-- ここまで career section -->
 
     <!-- ここから contact form section -->
     <section id="contact-form" class="section-container contact-form-section">
-      <div class="section-title"><h2>お問い合わせ</h2></div>
+      <div class="section-title"><h2>Contact</h2></div>
       <div class="contact-form">
         <form>
-          <div class="form-left">
-            <dl>
-              <dt class="form-name">氏名：</dt>
-              <dd><input type="text"></dd>
-            </dl>
-            <dl>
-              <dt class="form-tel">TEL：</dt>
-              <dd><input type="tel"></dd>
-            </dl>
-            <dl>
-              <dt class="form-email">Email：</dt>
-              <dd><input type="email"></dd>
-            </dl>
-            <dl>
-              <dt class="form-subject">種別：</dt>
-              <dd>
-                <select name="contact-lists">
-                  <option disabled selected value="" >選択して下さい</option>
-                  <option value="price">見積もり</option>
-                  <option value="consultation">相談</option>
-                  <option value="others">その他</option>
-                </select>
-            </dd>
-            </dl>
-          </div>
-          <div class="form-right">
-            <dl>
-              <dt class="form-detail">内容：</dt>
-              <textarea  cols="30" rows="10"></textarea>
-            </dl>
+            <ul>
+              <li class="form-name">氏名：</li>
+              <li><input type="text"></li>
+              <li class="form-tel">TEL：</li>
+              <li><input type="tel"></li>
+              <li class="form-email">Email：</li>
+              <li><input type="email"></li>
+              <li class="form-detail">内容：</li>
+              <textarea  cols="30" rows="15"></textarea>
+            </ul>
             <div class="form-button">
-              <button>送信</button>
-              <button>取消</button>
-            </div>
+              <button>内容を送信する</button>
           </div>
         </form>
       </div>
@@ -230,18 +115,16 @@
   <footer>
     <div class="footer-top">
       <nav>
-      <ul>
-        <li><a href="#">TOP</a> </li>
-        <li><a href="#profile">自己紹介</a> </li>
-        <li><a href="#portfolio">制作実績</a> </li>
-        <li><a href="#skill">技術・スキル</a> </li>
-        <li><a href="#career">経歴</a> </li>
-        <li><a href="#contact-form">お問い合わせ</a> </li>
-      </ul>
-    </nav>
+        <ul>
+          <li><a href="#">TOP</a> </li>
+          <li><a href="#portfolio">Works</a> </li>
+          <li><a href="#career">Career</a> </li>
+          <li><a href="#contact-form">Contact</a> </li>
+        </ul>
+      </nav>
     </div>
     <div class="footer-bottom">
-      <h1>My profile</h1>
+      <p>@ SUZUKI DESIGN</p>
     </div>
   </footer>
   <!-- ここまで Footer -->

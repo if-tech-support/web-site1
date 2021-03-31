@@ -21,11 +21,13 @@ img {
 
 /* body ここから */
 body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   width: 1200px;
   margin: 0 auto;
 
   color: #1b1b1b;
   background-color: #e9e9e9;
+  letter-spacing: 3px;
 }
 /* body ここまで */
 /* =============================== */
@@ -50,6 +52,10 @@ header nav ul {
 
 header nav ul li {
   margin-left: 20px;
+}
+
+header h1 {
+  font-weight: lighter;
 }
 
 /* header  ここまで */

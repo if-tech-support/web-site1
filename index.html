@@ -8,6 +8,10 @@
   <title>My profile site</title>
 </head>
 <body>
+
+  <!-- ここからHeader -->
+  <!-- ここでは、flexbox の 入れ子を１段階ぼり下げたレイアウト を学ぶ -->
+  <!-- 具体的には、タイトルとナビゲーションのflex, ナビゲーション内のリスト要素のflex -->
   <header>
     <div class="header-title"><h1>My Profile</h1></div>
     <nav>
@@ -22,11 +26,22 @@
   </header>
 
   <!-- ここから main タグ -->
+  <!--
+    Section 毎に 学べるテーマが変わるように構成
+      ・First-view : 画像の上にテキストを 重ねるレイアウト
+      ・Profile : イメージとコンテンツを左右に配置したレイアウト
+      ・Portfolio : タイトルとイメージを上下に配置したレイアウト
+      ・Skill : 2行のテーブルを２つflexで並べるレイアウト
+      ・Career : ３行のテーブルを利用したレイアウト
+      ・Contact-form : Form, dl / dt / dd , input, select, textarea を使ったレイアウト
+  -->
   <main class="main-container">
 
     <!-- ここからfirst view -->
     <div class="first-view">
       <div class="first-image">
+      </div>
+      <div class="first-title">
         <h1>My Profile Site</h1>
       </div>
     </div>
@@ -39,7 +54,7 @@
         <div class="profile-image"><img src="image/profile-image.png" alt="プロフィール画像"></div>
         <div class="profile-items">
           <ul>
-            <li>名前：<span>山田　花子</span> </li>
+            <li>名前：<span>鈴木　太郎</span> </li>
             <li>年齢：<span>28歳</span></li>
             <li>出身地：<span>東京都</span></li>
           </ul>
@@ -55,16 +70,19 @@
       <div class="portfolio-contents">
         <div class="portfolio-content portfolio1">
           <h3>ポートフォリオサイト</h3>
-          <img src="image/portfolio-image2.png" alt="ポートフォリオサイト">
+          <img src="image/portfolio-image1.png" alt="イラスト１">
         </div>
         <div class="portfolio-content portfolio2">
-          <h3>イラスト</h3>
-          <img src="image/portfolio-image1.jpeg" alt="イラスト１">
+          <h3>カフェサイト</h3>
+          <img src="image/portfolio-image2.jpg" alt="カフェサイト">
         </div>
         <div class="portfolio-content portfolio3">
-          <h3>イラスト</h3>
-          <img src="image/portfolio-image3.jpeg" alt="イラスト２">
+          <h3>ポートレート</h3>
+          <img src="image/portfolio-image3.jpg" alt="ポートレート">
         </div>
+      </div>
+      <div class="portfolio-more-button">
+        <p>もっと見る</p>
       </div>
     </section>
     <!-- ここまで portfolio section -->
@@ -208,6 +226,7 @@
 
   </main>  <!-- ここまで main タグ -->
 
+  <!-- ここから Footer -->
   <footer>
     <div class="footer-top">
       <nav>
@@ -225,6 +244,7 @@
       <h1>My profile</h1>
     </div>
   </footer>
+  <!-- ここまで Footer -->
 
 </body>
 </html>

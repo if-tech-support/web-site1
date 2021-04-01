@@ -63,7 +63,7 @@ header h1 {
 
 /* main-container ここから */
 .main-container {
-  width: 1200px;
+  width: 1100px;
   margin: 0px auto;
   padding-bottom: 80px;
 
@@ -104,12 +104,49 @@ header h1 {
 
   text-align-last: left;
   color: #1b1b1b;
-  font-size: 60px;
+  font-size: 65px;
   font-weight: lighter;
 
 }
 /* section 全体 ここまで */
 /* =============================== */
+
+/* service-section ここから */
+.service-contents {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.service-content {
+  width: 30%;
+}
+
+.service-title {
+  margin-bottom: 15px;
+
+  font-size: 35px;
+}
+
+.service-subtitle {
+  margin-bottom: 60px;
+
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+.service-image {
+  margin-bottom: 80px;
+}
+
+.service-image img {
+  border: none;
+  width: 55%;
+  opacity: .9 ;
+}
+
+/* =============================== */
+/* service-section ここまで */
 
 /* .portfolio-section ここから */
 .portfolio-contents {

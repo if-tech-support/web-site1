@@ -1,167 +1,134 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>My profile site</title>
-</head>
-<body>
-
-  <!-- ここからHeader -->
-  <!-- ここでは、flexbox の 入れ子を１段階ぼり下げたレイアウト を学ぶ -->
-  <!-- 具体的には、タイトルとナビゲーションのflex, ナビゲーション内のリスト要素のflex -->
-  <header>
-    <div class="header-title"><h1>My Profile</h1></div>
-    <nav>
-      <ul>
-        <li><a href="#service">Service</a> </li>
-        <li><a href="#portfolio">Works</a> </li>
-        <li><a href="#career">Career</a> </li>
-        <li><a href="#contact-form">Contact</a> </li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- ここから main タグ -->
-  <!--
-    Section 毎に 学べるテーマが変わるように構成
-      ・First-view : 画像の上にテキストを 重ねるレイアウト
-      ・Portfolio : タイトルとイメージを上下に配置したレイアウト
-      ・Career : ３行のテーブルを利用したレイアウト
-      ・Contact-form : Form, dl / dt / dd , input, select, textarea を使ったレイアウト
-  -->
-  <!-- ここからfirst view -->
-  <div class="first-view">
-    <img src="image/first-view-image.jpg" alt="ファーストビュー">
-  </div>
-  <!-- ここまでfirst view -->
-
-  <main class="main-container">
-
-    <!-- ここから service section -->
-    <section id="service" class="section-container service-section">
-       <div class="section-title"><h1>Service</h1></div>
-      <div class="service-contents">
-        <div class="service-content design-content">
-          <div class="service-title">デザイン</div>
-          <div class="service-subtitle">Design</div>
-          <div class="service-image"><img src="./image/service-design.png" alt=""></div>
-          <div class="service-detail">
-            ここにサービスの説明文が入る。ここにサービスの説明文が入る。ここにサービスの説明文が入る。ここにサービスの説明文が入る。ここにサービスの説明文が入る。ここにサービスの説明文が入る。ここにサービスの説明文が入る。
-          </div>
-        </div>
-        <div class="service-content programing-content">
-          <div class="service-title">プログラミング</div>
-          <div class="service-subtitle">Programing</div>
-          <div class="service-image"><img src="./image/service-programing.png" alt=""></div>
-          <div class="service-detail">
-            ここにサービスの説明文が入る。ここにサービスの説明文が入る。ここにサービスの説明文が入る。ここにサービスの説明文が入る。ここにサービスの説明文が入る。ここにサービスの説明文が入る。ここにサービスの説明文が入る。
-          </div>
-        </div>
-        <div class="service-content consulting-content">
-          <div class="service-title">コンサルティング</div>
-          <div class="service-subtitle">Consulting</div>
-          <div class="service-image"><img src="./image/service-consulting.png" alt=""></div>
-          <div class="service-describe">
-            ここにサービスの説明文が入る。ここにサービスの説明文が入る。ここにサービスの説明文が入る。ここにサービスの説明文が入る。ここにサービスの説明文が入る。ここにサービスの説明文が入る。ここにサービスの説明文が入る。
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ここまで service section -->
-
-    <!-- ここから portfolio section -->
-    <section id="portfolio" class="section-container portfolio-section">
-      <div class="section-title"><h1>Works</h1></div>
-      <div class="portfolio-contents">
-        <div class="portfolio-content portfolio1">
-          <img src="image/portfolio-image1.jpg" alt="イラスト１">
-        </div>
-        <div class="portfolio-content portfolio2">
-          <img src="image/portfolio-image2.jpg" alt="カフェサイト">
-        </div>
-        <div class="portfolio-content portfolio3">
-          <img src="image/portfolio-image3.jpg" alt="ポートレート">
-        </div>
-        <div class="portfolio-content portfolio1">
-          <img src="image/portfolio-image3.jpg" alt="イラスト１">
-        </div>
-        <div class="portfolio-content portfolio2">
-          <img src="image/portfolio-image2.jpg" alt="カフェサイト">
-        </div>
-        <div class="portfolio-content portfolio3">
-          <img src="image/portfolio-image1.jpg" alt="ポートレート">
-        </div>
-        <div class="portfolio-view-more">
-          <p>VIEW MORE</p>
-        </div>
-      </div>
-    </section>
-    <!-- ここまで portfolio section -->
-
-    <!-- ここから career section -->
-    <section id="career" class="section-container career-section">
-      <div class="section-title"><h1>Career</h1></div>
-      <div class="career-contents">
-        <p>
-          2000年から webデザイナーとしてキャリアをスタート。
-        </p>
-        <p>
-          2003年に 東京都内の制作会社にて webデザイン部 マネージャーとしてデザイン業務に携わる。
-        </p>
-        <p>
-          2010年からフリーランスへ転向し、web制作やコンサルティングを行っています。
-        </p>
-      </div>
-    </section>
-    <!-- ここまで career section -->
-
-    <!-- ここから contact form section -->
-    <section id="contact-form" class="section-container contact-form-section">
-      <div class="section-title"><h1>Contact</h1></div>
-      <div class="contact-form">
-        <form>
-            <ul>
-              <li class="form-name">氏名：</li>
-              <li><input type="text"></li>
-              <li class="form-tel">TEL：</li>
-              <li><input type="tel"></li>
-              <li class="form-email">Email：</li>
-              <li><input type="email"></li>
-              <li class="form-detail">内容：</li>
-              <textarea  cols="30" rows="15"></textarea>
-            </ul>
-            <div class="form-button">
-              <button>内容を送信する</button>
-          </div>
-        </form>
-      </div>
-    </section>
-    <!-- ここまで contact form section -->
-
-  </main>  <!-- ここまで main タグ -->
-
-  <!-- ここから Footer -->
-  <footer>
-    <div class="footer-top">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>My Profile</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-title">My Profile</div>
       <nav>
         <ul>
-          <li><a href="#">TOP</a> </li>
-          <li><a href="#service">Service</a> </li>
-          <li><a href="#portfolio">Works</a> </li>
-          <li><a href="#career">Career</a> </li>
-          <li><a href="#contact-form">Contact</a> </li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#career">Career</a></li>
+          <li><a href="#contact-form">Contact</a></li>
         </ul>
       </nav>
-    </div>
-    <div class="footer-bottom">
-      <p>©︎ SUZUKI DESIGN</p>
-    </div>
-  </footer>
-  <!-- ここまで Footer -->
+    </header>
 
-</body>
+    <div class="first-view">
+      <img src="image/first-view-image.jpg" />
+    </div>
+
+    <main>
+      <section id="service" class="service-section">
+        <div class="section-title"><h1>Service</h1></div>
+        <div class="service-contents">
+          <div class="service-item">
+            <div class="service-item-title"><h2>デザイン</h2></div>
+            <div class="service-item-subtitle"><h3>Design</h3></div>
+            <div class="service-item-image">
+              <img src="image/service-design.png" />
+            </div>
+            <div class="service-item-detail">
+              <p>
+                ここに詳細が記載される。ここに詳細が記載される。ここに詳細が記載される。ここに詳細が記載される。ここに詳細が記載される。ここに詳細が記載される。ここに詳細が記載される。ここに詳細が記載される。ここに詳細が記載される。
+              </p>
+            </div>
+          </div>
+
+          <div class="service-item">
+            <div class="service-item-title"><h2>プログラミング</h2></div>
+            <div class="service-item-subtitle"><h3>Programing</h3></div>
+            <div class="service-item-image">
+              <img src="image/service-programing.png" />
+            </div>
+            <div class="service-item-detail">
+              <p>
+                ここに詳細が記載される。ここに詳細が記載される。ここに詳細が記載される。ここに詳細が記載される。ここに詳細が記載される。ここに詳細が記載される。ここに詳細が記載される。ここに詳細が記載される。ここに詳細が記載される。
+              </p>
+            </div>
+          </div>
+
+          <div class="service-item">
+            <div class="service-item-title"><h2>コンサルティング</h2></div>
+            <div class="service-item-subtitle"><h3>Consulting</h3></div>
+            <div class="service-item-image">
+              <img src="image/service-consulting.png" />
+            </div>
+            <div class="service-item-detail">
+              <p>
+                ここに詳細が記載される。ここに詳細が記載される。ここに詳細が記載される。ここに詳細が記載される。ここに詳細が記載される。ここに詳細が記載される。ここに詳細が記載される。ここに詳細が記載される。ここに詳細が記載される。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="works" class="works-section">
+        <div class="section-title"><h1>Works</h1></div>
+        <div class="works-contents">
+          <div class="works-item"><img src="image/work1.jpg" /></div>
+          <div class="works-item"><img src="image/work2.jpg" /></div>
+          <div class="works-item"><img src="image/work3.jpg" /></div>
+          <div class="works-item"><img src="image/work1.jpg" /></div>
+          <div class="works-item"><img src="image/work2.jpg" /></div>
+          <div class="works-item"><img src="image/work3.jpg" /></div>
+          <div class="works-view-more"><a href="">VIEW MORE</a></div>
+        </div>
+      </section>
+
+      <section id="career" class="career-section">
+        <div class="section-title"><h1>Career</h1></div>
+        <div class="career-contents">
+          <p>2000年から webデザイナーとしてキャリアをスタート。</p>
+          <p>
+            2003年に 東京都内の制作会社にて webデザイン部
+            マネージャーとしてデザイン業務に携わる。
+          </p>
+          <p>
+            2010年からフリーランスへ転向し、web制作やコンサルティングを行っています。
+          </p>
+        </div>
+      </section>
+
+      <section id="contact-form" class="contact-form-section">
+        <div class="section-title"><h1>Contact</h1></div>
+        <form>
+          <ul>
+            <li>氏名：</li>
+            <li><input type="text" /></li>
+            <li>TEL：</li>
+            <li><input type="tel" /></li>
+            <li>Email：</li>
+            <li><input type="email" /></li>
+            <li>内容：</li>
+            <li><textarea cols="30" rows="10"></textarea></li>
+          </ul>
+          <button>内容を送信する</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-top">
+        <nav>
+          <ul>
+            <li><a href="#top">TOP</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#career">Career</a></li>
+            <li><a href="#contact-form">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>©︎ SUZUKI DESIGN</p>
+      </div>
+    </footer>
+  </body>
 </html>

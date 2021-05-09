@@ -1,6 +1,4 @@
 a {
-  padding: 8px ;
-
   text-decoration: none;
   color: #1b1b1b;
 }
@@ -13,15 +11,14 @@ li {
   list-style: none;
 }
 
-img {
-  border: 1px solid #012736;
-}
+.c
 
-/* =============================== */
-
-/* body ここから */
+/* ============================
+ body
+============================== */
 body {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Gill Sans';
+
   width: 1200px;
   margin: 0 auto;
 
@@ -29,21 +26,21 @@ body {
   background-color: #e9e9e9;
   letter-spacing: 3px;
 }
-/* body ここまで */
-/* =============================== */
 
-/* header  ここから */
+/* ============================
+ header
+============================== */
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
-  margin-top: 30px;
-  padding: 0 25px;
+  padding: 10px 25px;
 }
 
-header nav {
-  display: flex;
-  align-items: center;
+header .header-title {
+  font-size: 30px;
+  font-weight: lighter;
 }
 
 header nav ul {
@@ -51,281 +48,188 @@ header nav ul {
 }
 
 header nav ul li {
-  margin-left: 20px;
+  padding: 4px;
+  margin-left: 10px;
 }
 
-header h1 {
-  font-weight: lighter;
+header nav ul li:hover {
+  background-color: #fff;
 }
 
-/* header  ここまで */
-/* =============================== */
-
-/* main-container ここから */
-.main-container {
-  width: 1100px;
-  margin: 0px auto;
-  padding-bottom: 80px;
-
-  text-align: center;
-}
-/* main-container ここまで */
-/* =============================== */
-
-/* first view ここから */
-.first-view {
+/* ============================
+  first-view
+============================== */
+.first-view  {
   width: 100%;
   height: 500px;
-
-  margin: 0 auto;
-  position: relative;
+  margin:0 auto;
 }
 
 .first-view img {
   width: 100%;
-  height: 500px;
-
-  border: none;
+  height: 100%;
 }
 
-/* first view ここまで */
-/* =============================== */
+/* ============================
+ main
+============================== */
+main {
+  width: 95%;
+  margin: 50px auto;
+}
 
-/* section 全体ここから */
-.section-container {
-  display: flex;
-  flex-direction: column;
-
+/* ============================
+ section
+============================== */
+section {
   width: 100%;
-  margin: 100px auto ;
+  margin-bottom: 100px;
 }
 
 .section-title h1 {
-  margin-bottom: 80px;
-
-  text-align-last: left;
-  color: #1b1b1b;
-  font-size: 65px;
+  font-size: 50px;
   font-weight: lighter;
-
 }
-/* section 全体 ここまで */
-/* =============================== */
 
-/* service-section ここから */
+/* ============================
+ Service
+============================== */
 .service-contents {
   display: flex;
   justify-content: space-between;
+}
+
+.service-item {
+  width: 30%;
   text-align: center;
 }
 
-.service-content {
-  width: 30%;
-}
-
-.service-title {
-  margin-bottom: 15px;
-
+.service-item-title h2 {
   font-size: 35px;
-}
-
-.service-subtitle {
-  margin-bottom: 60px;
-
-  font-size: 24px;
   font-weight: lighter;
 }
 
-.service-image {
-  margin-bottom: 80px;
+.service-item-subtitle h3 {
+  font-size: 25px;
+  font-weight: lighter;
 }
 
-.service-image img {
-  border: none;
-  width: 55%;
-  opacity: .9 ;
+.service-item-image {
+  margin: 50px 0;
 }
 
-/* =============================== */
-/* service-section ここまで */
+.service-item-image img {
+  width: 50%;
+}
 
-/* .portfolio-section ここから */
-.portfolio-contents {
+/* ============================
+ Works
+============================== */
+.works-contents {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.portfolio-content {
-  width: 33%;
-  height: 250px;
+.works-item {
+  width: 30%;
   margin-bottom: 50px;
 }
 
-.portfolio1 img,
-.portfolio2 img,
-.portfolio3 img {
-  width: 85%;
+.works-item img {
+  width: 100%;
 }
 
-.portfolio-view-more {
+.works-item img:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.works-view-more {
   margin: 0 auto;
+  padding: 5px;
 
   border-bottom: 1px solid #1b1b1b;
-  letter-spacing: 5px;
+  letter-spacing: 6px;
 }
 
-/* portfolio-section ここまで */
-/* =============================== */
-
-/* .skill-section ここから */
-.skill-contents {
-  display: flex;
-  justify-content: space-evenly;
-
-  text-align: left;
+.works-view-more:hover {
+  background-color: #bebebe;
 }
 
-.skill-title {
-  text-align: center;
-
-  font-size: 22px;
-}
-
-.skill-contents > div table {
-  padding: 20px;
-  border-radius: 20px;
-}
-
-.skill-contents  th {
-  padding-bottom: 30px;
-
-  font-size: 20px;
-}
-
-.skill-section th span {
-  padding-bottom: 10px;
-
-  border-bottom: 2px solid #ffa114;
-}
-
-.skill-contents  td {
-  padding-right: 30px;
-  padding-bottom: 20px;
-}
-
-.skill-contents td span {
-  font-weight: bold;
-}
-
-
-/* .skill-section ここまで */
-/* =============================== */
-
-/* .career-section ここから */
+/* ============================
+ Career
+============================== */
 .career-contents {
-  width: 93%;
-  padding: 20px 10px 0px;
-
-  text-align: left;
-  border-radius: 20px;
+  margin: 100px 0 0 20px;
 }
 
-
-.career-contents  p {
+.career-contents p {
   margin-bottom: 30px;
-
-  font-size: 20px;
-  line-height: 30px;
 }
 
-/* career-sectionここまで */
-/* =============================== */
-
-/* .contact-form-sectionここから */
-
+/* ============================
+ Contact Form
+============================== */
 form {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-}
-
-form ul {
-  padding: 0;
-  font-size: 20px;
+  margin-left: 30px;
 }
 
 form ul li {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
-form input {
-  width: 350px;
-  margin-bottom: 20px;
+form ul li input {
   padding: 10px;
+  width: 250px;
 
-  font-size: 15px;
-  border: 1px solid #012736;
-  outline: none;
-  color: #012736;
+  font-size: 16px;
 }
 
-form textarea {
-  width: 500px;
-  margin-bottom: 20px;
-  padding: 10px 14px;
+form ul li textarea {
+  padding: 10px;
+  width: 400px;
 
-  font-size: 15px;
-  border: 1px solid #012736;
-  outline: none;
-  color: black;
+  font-size: 16px;
 }
 
-.form-button {
-  display: flex;
-  justify-content: flex-start;
-}
+form button {
+  padding: 15px 50px;
 
-.form-button button {
-  margin-right: 30px;
-  padding: 18px 80px;
-
-  font-size: 22px;
+  font-size: 20px;
   color: #ffffff;
-  background-color: rgb(139, 139, 139);
+  background-color: rgb(129, 129, 129);
   border: none;
   outline: none;
 }
-/* contact-form-content ここまで */
-/* =============================== */
 
-
-/* footer ここから */
-footer {
-  height: 180px;
+form button:hover {
+  cursor: pointer;
+  background-color: rgb(90, 90, 90);
 }
 
-.footer-top nav {
-  display: flex;
-  justify-content: start;
 
-  border-bottom: 2px solid rgb(61, 61, 61);
+/* ============================
+ footer
+============================== */
+footer {
+  width: 100%;
+}
+
+.footer-top {
+  border-bottom: 2px solid #9c9a9a;
 }
 
 .footer-top nav ul {
   display: flex;
-  margin: 30px 0;
-  padding: 0;
 }
 
 .footer-top nav ul li {
-  padding: 0px 20px;
+  margin-left: 30px;
 }
 
 .footer-bottom p {
-  margin-top: 30px;
-  text-align: right;
+  text-align-last: right;
+  padding-right: 20px;
+  padding-bottom: 20px;
 }
-
-/* footer ここまで */
